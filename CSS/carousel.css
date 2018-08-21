@@ -1,0 +1,90 @@
+.carousel, .carousel-item {
+    width: 100%;
+    height: 100vh;
+}
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.8);
+}
+
+.carousel-caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-caption h2 { font-size: 4.5rem; }
+.carousel-caption p { font-size: 1.4rem; text-transform: capitalize; }
+.carousel-item .slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+/* Galaxy S5 portrait and landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .carousel-caption h2 { font-size: 2.0rem !important; }
+    .carousel-caption p { font-size: .8rem; }
+}
+/* J7 portrait and landscape */
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  .carousel-caption h2 { font-size: 2.0rem !important; }
+  .carousel-caption p { font-size: .8rem; }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 575.99px) {
+    .carousel-caption { padding: 50px }
+    .carousel-caption h2 { font-size: 2.2rem; }
+    .carousel-caption p { font-size: .8rem; }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.99px) {
+    .carousel-caption { padding: 50px }
+    .carousel-caption h2 { font-size: 2.2rem; }
+    .carousel-caption p { font-size: .8rem; }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.99px) {
+    .carousel-caption { padding: 50px }
+    .carousel-caption h2 { font-size: 2rem; }
+    .carousel-caption p { font-size: 1.5rem; }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.99px) {
+    .carousel-caption { padding: 50px }
+    .carousel-caption h2 { font-size: 3rem; }
+    .carousel-caption p { font-size: 1.5rem; }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.99px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .carousel-caption h2 { font-size: 5rem; }
+    .carousel-caption { padding: 170px }
+}
